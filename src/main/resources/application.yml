@@ -1,3 +1,25 @@
 micronaut:
   application:
     name: consumer-service
+endpoints:
+  health:
+    enabled: true
+datasources:
+  in-memory:
+    url: 'jdbc:h2:mem:test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE'
+    username: 'test'
+    password: 'test'
+    driverClassName: 'org.h2.Driver'
+jpa:
+  in-memory:
+    packages-to-scan:
+      - 'com.project.domain'
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        show_sql: true
+flyway:
+  datasources:
+    in-memory:
+      locations: classpath:databasemigrations

@@ -1,0 +1,6 @@
+micronaut:
+  application:
+    name: consumer-service
+endpoints:
+  health:
+    enabled: true

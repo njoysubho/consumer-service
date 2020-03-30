@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: com.project
+---
+testFramework: kotlintest
+sourceLanguage: kotlin
