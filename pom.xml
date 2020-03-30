@@ -13,7 +13,7 @@
     <exec.mainClass>com.project.Application</exec.mainClass>
     <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
     <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
-    <kotlinVersion>1.3.61</kotlinVersion>
+    <kotlinVersion>1.3.71</kotlinVersion>
     <micronaut-flyway.version>1.1.0</micronaut-flyway.version>
     <kotlin.compiler.jvmTarget>${jdk.version}</kotlin.compiler.jvmTarget>
   </properties>
