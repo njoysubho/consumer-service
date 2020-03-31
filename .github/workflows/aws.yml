@@ -28,7 +28,9 @@ on:
   push:
     branches:
       - master
-
+env:
+  tf_version: 'latest'
+  tf_working_dir: 'terraform'
 name: Deploy to Amazon ECS
 
 jobs:
