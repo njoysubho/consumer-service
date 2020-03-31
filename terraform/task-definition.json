@@ -1,0 +1,23 @@
+[
+    {
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "secretOptions": null,
+        "options": {
+          "awslogs-group": "/ecs/consumer-service",
+          "awslogs-region": "eu-west-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+      ],
+      "memory": ${memory},
+      "memoryReservation": ${memory_reservation},
+      "image": "538653532257.dkr.ecr.eu-west-1.amazonaws.com/consumer-service/consumer:${image_tag}",
+      "name": "consumer-service"
+    }
+  ]
