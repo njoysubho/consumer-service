@@ -54,7 +54,7 @@ resource "aws_ecs_service" "consumer_service" {
   cluster         = var.cluster_name
   launch_type     = "FARGATE"
   network_configuration {
-    subnets         = ["subnet-178fd771", "subnet-af2144f5", "subnet-e1517aa9"]
+    subnets         = ["subnet-0ba62027c7b26273f"]
     security_groups = ["sg-0b6c758f00d70d9a5", "sg-0f0b61f6ea9f636fb"]
   }
   load_balancer {
